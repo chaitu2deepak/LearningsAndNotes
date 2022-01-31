@@ -1,0 +1,52 @@
+Java Important topics
+
+1.Java is platform independent beacuse the compiler compiles and converts the java code into a byte code which is not dependent on any systems hardware or software. Only requirement is system should have JRE i.e. Java Runtime Environment installed.
+
+2. The reason Java is not pure Object Oriented is because, it supports primitive data types such as byte, boolean, int, char, double.
+
+3.final key work in java
+
+-final variable
+  -declared before a variable so that the value cannot be modified.
+  -If rthe value is not assigned at declaration, it can be assigned only in the constructor.
+  
+-final method
+  -the method cannot be overridden when declared final
+  -constructor cannot be final because constructors are not inherited. If declared, it throws a compilation error 'modifier final not allowed here'.
+  
+ -final class
+  -the class cannot be inherited
+  -but it can extend other classes
+  
+4.finally
+  -a block declared after try catch blocks in order execute mandatory code.
+  
+ 5.finalize
+  -method executed before garbage collection for doing clean up activites.
+  
+ 6.static methods can be overloaded if the input parameters differ.
+ 7.static methods cannot be overridden because the blocks execute at the time of compilation and not at runtime i.e. dynamic polymorphism happens at runtime.
+ 
+ 8.why strings are immutable in java?
+  -strings made immutable for making it to be shared among different resources.
+  -mutable strings are difficult to share
+  -string pool is available in heap memory for string literals which can be shared.
+  -string str1 = "chaitanya" ---memory created in string pool inside heap
+  -string str2 = "deepak"  ---- memory created in string pool inside heap
+  -string str3 = new String("chaitanya"). --- memory created in heap but not in pool
+  -string str4 - "chaitanya". - reference pointed to str1 available in string pool.
+  
+9.StringBuffer
+  -mutable
+  -thread safe
+  -used in multithreaded environment
+
+10.StringBuilder
+  -mutable
+  -not thread safe
+  -used for faster performance and more efficient
+  
+ 11.
+ 
+  
+ 
